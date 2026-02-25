@@ -118,7 +118,16 @@ export default function Homepage2() {
               <br />
               Medicine.
               <br />
-              <span className="text-primary font-normal italic">
+              <span
+                className="font-normal italic"
+                style={{
+                  background:
+                    "linear-gradient(135deg, #6B4C9A 0%, #4A9B7F 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
                 Authentic Care.
               </span>
             </h1>
