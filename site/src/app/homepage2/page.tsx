@@ -82,15 +82,15 @@ export default function Homepage2() {
     <div>
       {/* Hero - Full-screen minimalist with large serif-style type */}
       <section className="relative min-h-[90vh] flex items-center bg-[#faf9f7]">
-        <div className="absolute top-0 right-0 w-1/2 h-full hidden lg:block">
+        <div className="absolute top-0 right-0 w-3/5 h-full hidden lg:block">
           <Image
             src="/images/hero-stethoscope.jpg"
             alt="M. Chavez MD practice"
             fill
-            className="object-cover"
+            className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#faf9f7] via-[#faf9f7]/40 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#faf9f7] via-[#faf9f7]/60 to-transparent" />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 py-20 w-full">
           <div className="max-w-xl">
