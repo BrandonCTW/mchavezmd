@@ -240,7 +240,7 @@ export default function Homepage2() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            {services.map((service) => {
+            {services.map((service, index) => {
               const Icon = service.icon;
               return (
                 <Link
@@ -257,6 +257,12 @@ export default function Homepage2() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                     <div className="absolute inset-0 bg-primary/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <span
+                      className="absolute top-3 right-4 text-5xl font-bold leading-none select-none tabular-nums text-white/15 group-hover:text-white/25 transition-colors duration-300"
+                      aria-hidden="true"
+                    >
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
                     <div className="absolute bottom-0 left-0 right-0 p-5">
                       <div className="flex items-center gap-2 mb-2">
                         <Icon size={16} className="text-white/80" />
