@@ -193,28 +193,41 @@ export default function Homepage2() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-gray-200">
             {[
-              { top: "28+", bottom: "Years Experience" },
-              { top: "FAAFP", bottom: "Board Certified" },
-              { top: "Walk-Ins", bottom: "Welcome Daily" },
-              { top: "Free", bottom: "On-Site Parking" },
-            ].map((item) => (
-              <div key={item.bottom} className="py-8 px-6 text-center">
-                <p
-                  className="text-2xl font-light"
-                  style={{
-                    background: "linear-gradient(135deg, #6B4C9A 0%, #4A9B7F 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
-                  }}
-                >
-                  {item.top}
-                </p>
-                <p className="text-xs tracking-[0.15em] uppercase text-gray-400 mt-1">
-                  {item.bottom}
-                </p>
-              </div>
-            ))}
+              { icon: Clock, top: "28+", bottom: "Years Experience" },
+              { icon: Star, top: "FAAFP", bottom: "Board Certified" },
+              { icon: Users, top: "Walk-Ins", bottom: "Welcome Daily" },
+              { icon: MapPin, top: "Free", bottom: "On-Site Parking" },
+            ].map((item) => {
+              const Icon = item.icon;
+              return (
+                <div key={item.bottom} className="py-8 px-6 text-center group hover:bg-gray-50/60 transition-colors duration-200">
+                  <div className="flex items-center justify-center mb-3">
+                    <div
+                      className="w-9 h-9 rounded-xl flex items-center justify-center"
+                      style={{
+                        background: "linear-gradient(135deg, rgba(107,76,154,0.10) 0%, rgba(74,155,127,0.10) 100%)",
+                      }}
+                    >
+                      <Icon size={16} className="text-primary/60 group-hover:text-primary transition-colors duration-200" />
+                    </div>
+                  </div>
+                  <p
+                    className="text-2xl font-light"
+                    style={{
+                      background: "linear-gradient(135deg, #6B4C9A 0%, #4A9B7F 100%)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                      backgroundClip: "text",
+                    }}
+                  >
+                    {item.top}
+                  </p>
+                  <p className="text-xs tracking-[0.15em] uppercase text-gray-400 mt-1">
+                    {item.bottom}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
