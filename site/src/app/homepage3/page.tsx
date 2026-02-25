@@ -396,7 +396,8 @@ export default function Homepage3() {
             </div>
 
             <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl p-6 border border-primary/20">
+              <div className="relative bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl p-6 border border-primary/20 overflow-hidden">
+                <span className="absolute top-2 right-4 text-[8rem] leading-none font-serif text-primary/10 select-none pointer-events-none">&rdquo;</span>
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Star
@@ -406,7 +407,7 @@ export default function Homepage3() {
                     />
                   ))}
                 </div>
-                <blockquote className="text-white/80 leading-relaxed text-sm">
+                <blockquote className="text-white/80 leading-relaxed text-sm relative">
                   &ldquo;My visit with Dr. Chavez is always pleasant. I love
                   that the Doctors take your appointment on time, very attentive
                   and professional and knowledgeable of my medical
@@ -435,7 +436,8 @@ export default function Homepage3() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-secondary/20 to-secondary/5 rounded-2xl p-6 border border-secondary/20">
+              <div className="relative bg-gradient-to-br from-secondary/20 to-secondary/5 rounded-2xl p-6 border border-secondary/20 overflow-hidden">
+                <span className="absolute top-2 right-4 text-[8rem] leading-none font-serif text-secondary/10 select-none pointer-events-none">&rdquo;</span>
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
                     <Star
@@ -445,7 +447,7 @@ export default function Homepage3() {
                     />
                   ))}
                 </div>
-                <blockquote className="text-white/80 leading-relaxed text-sm">
+                <blockquote className="text-white/80 leading-relaxed text-sm relative">
                   &ldquo;Dr. Chavez has my highest recommendation. He is
                   knowledgeable, intelligent, empathic, consistent, thorough and
                   soft-spoken. Basically, he delivers what most people want and
