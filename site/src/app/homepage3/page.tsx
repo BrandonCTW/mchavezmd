@@ -475,6 +475,38 @@ export default function Homepage3() {
         </div>
       </section>
 
+      {/* Marquee Strip */}
+      <div className="bg-gray-900 border-y border-white/5 overflow-hidden py-4">
+        <div
+          className="flex whitespace-nowrap"
+          style={{ animation: "marquee 28s linear infinite" }}
+        >
+          {[...Array(2)].map((_, i) => (
+            <span
+              key={i}
+              className="flex items-center gap-10 pr-10 text-xs font-bold uppercase tracking-[0.2em] text-white/25 shrink-0"
+            >
+              <span>Procedural Medicine</span>
+              <span className="text-accent/60">&#9670;</span>
+              <span>Authentic Care</span>
+              <span className="text-accent/60">&#9670;</span>
+              <span>28+ Years Experience</span>
+              <span className="text-accent/60">&#9670;</span>
+              <span>Board Certified FAAFP</span>
+              <span className="text-accent/60">&#9670;</span>
+              <span>Wicker Park Chicago</span>
+              <span className="text-accent/60">&#9670;</span>
+              <span>Walk-Ins Welcome</span>
+              <span className="text-accent/60">&#9670;</span>
+              <span>New Patients Accepted</span>
+              <span className="text-accent/60">&#9670;</span>
+              <span>Family Medicine</span>
+              <span className="text-accent/60">&#9670;</span>
+            </span>
+          ))}
+        </div>
+      </div>
+
       {/* Location - Dark Map Section */}
       <section className="py-16 md:py-24 bg-gray-900">
         <div className="max-w-7xl mx-auto px-6">
