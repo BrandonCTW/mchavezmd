@@ -123,6 +123,27 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Trust Bar */}
+      <section className="bg-primary-dark text-white py-6 border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            {[
+              { value: "28+", label: "Years in Family Medicine" },
+              { value: "FAAFP", label: "Board-Certified Fellow" },
+              { value: "Walk-Ins", label: "Always Welcome" },
+              { value: "Free", label: "Parking Available" },
+            ].map((stat) => (
+              <div key={stat.label} className="flex flex-col items-center gap-1">
+                <span className="text-2xl md:text-3xl font-bold text-secondary-light">
+                  {stat.value}
+                </span>
+                <span className="text-sm text-white/70">{stat.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Mission & Info */}
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
