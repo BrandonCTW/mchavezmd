@@ -103,6 +103,11 @@ export default function Homepage3() {
           <div className="absolute inset-0 bg-gradient-to-b from-gray-950/60 via-gray-950/80 to-gray-950" />
         </div>
 
+        {/* Ambient glow orbs */}
+        <div className="absolute -top-24 -right-24 w-[600px] h-[600px] rounded-full bg-primary/20 blur-[160px] hidden lg:block pointer-events-none" />
+        <div className="absolute bottom-0 -left-24 w-[500px] h-[500px] rounded-full bg-secondary/15 blur-[140px] hidden lg:block pointer-events-none" />
+        <div className="absolute top-1/2 left-1/3 w-[300px] h-[300px] rounded-full bg-accent/8 blur-[100px] hidden lg:block pointer-events-none" />
+
         {/* Decorative geometric shapes */}
         <div className="absolute top-20 right-10 w-72 h-72 rounded-full border border-primary/20 hidden lg:block" />
         <div className="absolute bottom-32 right-32 w-40 h-40 rounded-full border border-secondary/20 hidden lg:block" />
