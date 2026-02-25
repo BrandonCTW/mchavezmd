@@ -268,8 +268,18 @@ export default function Homepage2() {
       </section>
 
       {/* Mission - Large Pull Quote */}
-      <section className="py-20 md:py-28 bg-[#faf9f7]">
-        <div className="max-w-5xl mx-auto px-6 text-center">
+      <section
+        className="py-20 md:py-28 relative overflow-hidden"
+        style={{ background: "linear-gradient(135deg, #f5f0fb 0%, #eef8f4 100%)" }}
+      >
+        {/* Top gradient border */}
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent pointer-events-none" />
+        {/* Bottom gradient border */}
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-secondary/30 to-transparent pointer-events-none" />
+        {/* Soft glow blobs */}
+        <div className="absolute -left-24 top-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-primary/8 blur-3xl pointer-events-none" />
+        <div className="absolute -right-24 top-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-secondary/8 blur-3xl pointer-events-none" />
+        <div className="max-w-5xl mx-auto px-6 text-center relative">
           <Quote size={40} className="text-primary/20 mx-auto mb-8" />
           <blockquote className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-800 leading-relaxed italic">
             &ldquo;We strive to inspire and aid those seeking their optimal
