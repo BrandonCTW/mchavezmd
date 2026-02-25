@@ -368,6 +368,7 @@ export default function Homepage2() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl p-8 shadow-sm relative overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary pointer-events-none" />
               <div
                 className="absolute -top-4 left-4 text-[8rem] leading-none text-primary/10 select-none pointer-events-none"
                 style={{ fontFamily: "Georgia, serif" }}
@@ -407,6 +408,7 @@ export default function Homepage2() {
               </div>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-sm relative overflow-hidden">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-secondary pointer-events-none" />
               <div
                 className="absolute -top-4 left-4 text-[8rem] leading-none text-primary/10 select-none pointer-events-none"
                 style={{ fontFamily: "Georgia, serif" }}
