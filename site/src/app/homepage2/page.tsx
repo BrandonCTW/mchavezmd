@@ -196,7 +196,17 @@ export default function Homepage2() {
               { top: "Free", bottom: "On-Site Parking" },
             ].map((item) => (
               <div key={item.bottom} className="py-8 px-6 text-center">
-                <p className="text-2xl font-light text-primary">{item.top}</p>
+                <p
+                  className="text-2xl font-light"
+                  style={{
+                    background: "linear-gradient(135deg, #6B4C9A 0%, #4A9B7F 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                  }}
+                >
+                  {item.top}
+                </p>
                 <p className="text-xs tracking-[0.15em] uppercase text-gray-400 mt-1">
                   {item.bottom}
                 </p>
