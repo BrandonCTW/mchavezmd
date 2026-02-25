@@ -357,6 +357,35 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Pre-Footer CTA */}
+      <section className="bg-gradient-to-r from-accent to-accent-light py-16 md:py-20">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            Your Health Is Worth It
+          </h2>
+          <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+            Walk-ins welcome. New patients accepted. Most PPO insurance plans
+            accepted - and cash pay options available too.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/schedule"
+              className="inline-flex items-center justify-center gap-2 bg-white text-accent hover:bg-white/90 px-8 py-4 rounded-lg font-bold text-lg transition-colors shadow-md"
+            >
+              Schedule Appointment
+              <ArrowRight size={20} />
+            </Link>
+            <a
+              href="tel:7732273303"
+              className="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-lg font-bold text-lg transition-colors"
+            >
+              <Phone size={20} />
+              (773) 227-3303
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
