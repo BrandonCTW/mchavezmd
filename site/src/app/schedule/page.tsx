@@ -29,8 +29,8 @@ export default function SchedulePage() {
             forward to seeing you.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Online Booking */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            {/* Dr. Chavez Booking */}
             <a
               href="https://www.patientfusion.com/doctor/milton-chavez-md-faafp-48961"
               target="_blank"
@@ -44,16 +44,44 @@ export default function SchedulePage() {
                 />
               </div>
               <h2 className="text-xl font-bold text-gray-900 mb-2">
-                Book Online
+                Dr. Milton Chavez, MD
               </h2>
               <p className="text-gray-600 text-sm mb-4">
-                Schedule your visit through Patient Fusion
+                Book with Dr. Chavez on Patient Fusion
               </p>
               <span className="inline-flex items-center gap-1 text-primary font-medium text-sm">
-                Go to Patient Fusion
+                Schedule Now
                 <ExternalLink size={14} />
               </span>
             </a>
+
+            {/* Karen Corona Booking */}
+            <a
+              href="https://www.patientfusion.com/doctor/karen-corona-80106"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-white border-2 border-gray-200 hover:border-primary rounded-xl p-8 text-center transition-all hover:shadow-lg"
+            >
+              <div className="p-4 bg-primary/10 rounded-full w-fit mx-auto mb-4 group-hover:bg-primary transition-colors">
+                <Calendar
+                  size={28}
+                  className="text-primary group-hover:text-white transition-colors"
+                />
+              </div>
+              <h2 className="text-xl font-bold text-gray-900 mb-2">
+                Karen Corona, FNP-C
+              </h2>
+              <p className="text-gray-600 text-sm mb-4">
+                Book with Karen on Patient Fusion
+              </p>
+              <span className="inline-flex items-center gap-1 text-primary font-medium text-sm">
+                Schedule Now
+                <ExternalLink size={14} />
+              </span>
+            </a>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
             {/* Call */}
             <a

@@ -227,6 +227,30 @@ export default function Home() {
                   - Chad M.
                 </p>
               </div>
+
+              <div className="bg-primary/5 rounded-xl p-6">
+                <Quote size={28} className="text-primary/40 mb-3" />
+                <blockquote className="text-gray-700 italic">
+                  &ldquo;My visit with Dr. Chavez is always pleasant. I love
+                  that the Doctors take your appointment on time, very attentive
+                  and professional and knowledgeable of my medical
+                  history.&rdquo;
+                </blockquote>
+                <p className="mt-3 text-sm font-semibold text-primary">
+                  - Janneth H.
+                </p>
+                <p className="text-xs text-gray-400 mt-1">
+                  via{" "}
+                  <a
+                    href="https://www.tebra.com/care/provider/milton-chavez-md-1700869450"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-primary"
+                  >
+                    Tebra
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
