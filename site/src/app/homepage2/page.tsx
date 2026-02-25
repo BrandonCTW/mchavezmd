@@ -81,7 +81,20 @@ export default function Homepage2() {
   return (
     <div>
       {/* Hero - Full-screen minimalist with large serif-style type */}
-      <section className="relative min-h-[90vh] flex items-center bg-[#faf9f7]">
+      <section className="relative min-h-[90vh] flex items-center bg-[#faf9f7] overflow-hidden">
+        {/* Decorative dot grid - fades from text area outward */}
+        <div
+          className="absolute inset-0 pointer-events-none select-none"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle, rgba(107, 76, 154, 0.14) 1px, transparent 1px)",
+            backgroundSize: "28px 28px",
+            maskImage:
+              "radial-gradient(ellipse 55% 70% at 18% 50%, black 0%, transparent 100%)",
+            WebkitMaskImage:
+              "radial-gradient(ellipse 55% 70% at 18% 50%, black 0%, transparent 100%)",
+          }}
+        />
         <div className="absolute top-0 right-0 w-3/5 h-full hidden lg:block">
           <Image
             src="/images/hero-stethoscope.jpg"
@@ -142,6 +155,22 @@ export default function Homepage2() {
               <span className="inline-flex items-center gap-1.5 text-xs font-medium text-gray-500 bg-white border border-gray-200 px-3 py-1.5 rounded-full">
                 Most PPO Plans Accepted
               </span>
+            </div>
+
+            {/* Floating credential badge - desktop only */}
+            <div className="mt-8 hidden lg:inline-flex items-center gap-4 bg-white/80 backdrop-blur-sm border border-gray-200/70 rounded-2xl px-5 py-3.5 shadow-sm">
+              <div className="flex items-center gap-2.5 pr-4 border-r border-gray-200">
+                <div className="flex gap-0.5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={12} className="fill-accent text-accent" />
+                  ))}
+                </div>
+                <span className="text-xs font-medium text-gray-700">Highly Rated</span>
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-gray-900">Board-Certified FAAFP</p>
+                <p className="text-xs text-gray-500 mt-0.5">Illinois Licensed · Since 1997</p>
+              </div>
             </div>
           </div>
         </div>
