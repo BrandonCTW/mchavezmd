@@ -292,6 +292,7 @@ export default function Homepage3() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {/* Dr. Chavez */}
             <div className="group relative bg-white/5 rounded-2xl overflow-hidden border border-white/5 hover:border-primary/30 transition-all">
+              <div className="absolute -top-2 -left-2 text-[10rem] font-black text-primary/8 leading-none select-none pointer-events-none z-0 translate-x-2 translate-y-2">01</div>
               <div className="relative h-80">
                 <Image
                   src="/team/dr-chavez.jpg"
@@ -335,6 +336,7 @@ export default function Homepage3() {
 
             {/* Karen Corona */}
             <div className="group relative bg-white/5 rounded-2xl overflow-hidden border border-white/5 hover:border-secondary/30 transition-all">
+              <div className="absolute -top-2 -left-2 text-[10rem] font-black text-secondary/8 leading-none select-none pointer-events-none z-0 translate-x-2 translate-y-2">02</div>
               <div className="relative h-80">
                 <Image
                   src="/team/karen-corona.jpg"
