@@ -462,19 +462,28 @@ export default function Homepage2() {
                   the Doctors take your appointment on time, very attentive and
                   professional and knowledgeable of my medical history.&rdquo;
                 </blockquote>
-                <div className="mt-6 pt-4 border-t border-gray-100">
-                  <p className="font-medium text-gray-900 text-sm">Janneth H.</p>
-                  <p className="text-xs text-gray-400 mt-0.5">
-                    via{" "}
-                    <a
-                      href="https://www.tebra.com/care/provider/milton-chavez-md-1700869450"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline hover:text-primary"
-                    >
-                      Tebra
-                    </a>
-                  </p>
+                <div className="mt-6 pt-4 border-t border-gray-100 flex items-center gap-3">
+                  <div
+                    className="w-9 h-9 rounded-full flex items-center justify-center text-white text-xs font-semibold flex-shrink-0"
+                    style={{ background: "linear-gradient(135deg, #6B4C9A 0%, #4A9B7F 100%)" }}
+                    aria-hidden="true"
+                  >
+                    JH
+                  </div>
+                  <div>
+                    <p className="font-medium text-gray-900 text-sm">Janneth H.</p>
+                    <p className="text-xs text-gray-400 mt-0.5">
+                      via{" "}
+                      <a
+                        href="https://www.tebra.com/care/provider/milton-chavez-md-1700869450"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline hover:text-primary"
+                      >
+                        Tebra
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -503,9 +512,18 @@ export default function Homepage2() {
                   soft-spoken. Basically, he delivers what most people want and
                   deserve from their MD.&rdquo;
                 </blockquote>
-                <div className="mt-6 pt-4 border-t border-gray-100">
-                  <p className="font-medium text-gray-900 text-sm">Chad M.</p>
-                  <p className="text-xs text-gray-400 mt-0.5">Verified Patient</p>
+                <div className="mt-6 pt-4 border-t border-gray-100 flex items-center gap-3">
+                  <div
+                    className="w-9 h-9 rounded-full flex items-center justify-center text-white text-xs font-semibold flex-shrink-0"
+                    style={{ background: "linear-gradient(135deg, #6B4C9A 0%, #4A9B7F 100%)" }}
+                    aria-hidden="true"
+                  >
+                    CM
+                  </div>
+                  <div>
+                    <p className="font-medium text-gray-900 text-sm">Chad M.</p>
+                    <p className="text-xs text-gray-400 mt-0.5">Verified Patient</p>
+                  </div>
                 </div>
               </div>
             </div>
