@@ -131,6 +131,18 @@ export default function Homepage2() {
                 (773) 227-3303
               </a>
             </div>
+            <div className="mt-8 flex flex-wrap items-center gap-2">
+              <span className="inline-flex items-center gap-1.5 text-xs font-medium text-secondary bg-secondary/10 px-3 py-1.5 rounded-full">
+                <span className="w-1.5 h-1.5 rounded-full bg-secondary inline-block" />
+                Accepting New Patients
+              </span>
+              <span className="inline-flex items-center gap-1.5 text-xs font-medium text-gray-500 bg-white border border-gray-200 px-3 py-1.5 rounded-full">
+                Walk-ins Welcome
+              </span>
+              <span className="inline-flex items-center gap-1.5 text-xs font-medium text-gray-500 bg-white border border-gray-200 px-3 py-1.5 rounded-full">
+                Most PPO Plans Accepted
+              </span>
+            </div>
           </div>
         </div>
       </section>
