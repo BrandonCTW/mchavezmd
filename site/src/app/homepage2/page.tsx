@@ -270,6 +270,8 @@ export default function Homepage2() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                     <div className="absolute inset-0 bg-primary/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    {/* Shimmer sweep on hover */}
+                    <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 pointer-events-none z-10" />
                     <span
                       className="absolute top-3 right-4 text-5xl font-bold leading-none select-none tabular-nums text-white/15 group-hover:text-white/25 transition-colors duration-300"
                       aria-hidden="true"
