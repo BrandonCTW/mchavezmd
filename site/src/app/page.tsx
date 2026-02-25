@@ -21,6 +21,7 @@ const services = [
     title: "Family Medicine",
     href: "/family-medicine",
     icon: Stethoscope,
+    image: "/images/family-medicine.jpg",
     description:
       "Comprehensive and compassionate primary care focused on helping you achieve optimal health and wellness.",
   },
@@ -28,6 +29,7 @@ const services = [
     title: "Knee Pain",
     href: "/knee-pain",
     icon: Bone,
+    image: "/images/knee-pain.jpg",
     description:
       "Comprehensive evaluations and treatment plans to alleviate knee discomfort and restore mobility.",
   },
@@ -35,6 +37,7 @@ const services = [
     title: "Regenerative Medicine",
     href: "/regenerative-medicine",
     icon: FlaskConical,
+    image: "/images/regenerative-medicine.jpg",
     description:
       "Pioneering regenerative medicine for soft-tissue repair, chronic pain relief, and rejuvenation.",
   },
@@ -42,6 +45,7 @@ const services = [
     title: "Medical Botox",
     href: "/medical-botox",
     icon: Syringe,
+    image: "/images/medical-botox.jpg",
     description:
       "Medical Botox treatments for migraines, hyperhidrosis, and other conditions beyond cosmetic use.",
   },
@@ -49,6 +53,7 @@ const services = [
     title: "Minor Surgery",
     href: "/minor-surgery",
     icon: Scissors,
+    image: "/images/minor-surgery.jpg",
     description:
       "Same-day minor surgical procedures for moles, skin tags, and cysts - no referrals required.",
   },
@@ -56,6 +61,7 @@ const services = [
     title: "Musculoskeletal Pain",
     href: "/musculoskeletal-pain",
     icon: Activity,
+    image: "/images/musculoskeletal-pain.jpg",
     description:
       "Holistic and alternative therapies to help you heal and rehabilitate joint and muscle pain.",
   },
@@ -63,6 +69,7 @@ const services = [
     title: "Women's Health",
     href: "/womens-wellness",
     icon: Heart,
+    image: "/images/immediate-care.jpg",
     description:
       "Comprehensive care throughout a woman's journey from puberty through menopause.",
   },
@@ -70,6 +77,7 @@ const services = [
     title: "Men's Health",
     href: "/mens-wellness",
     icon: Users,
+    image: "/images/hero-stethoscope.jpg",
     description:
       "Individualized, holistic care tailored to men's unique healthcare needs and conditions.",
   },
@@ -245,22 +253,30 @@ export default function Home() {
                 <Link
                   key={service.href}
                   href={service.href}
-                  className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-primary/20"
+                  className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-primary/20"
                 >
-                  <div className="p-3 bg-primary/10 rounded-lg w-fit mb-4 group-hover:bg-primary transition-colors">
-                    <Icon
-                      size={24}
-                      className="text-primary group-hover:text-white transition-colors"
+                  <div className="relative h-36 overflow-hidden">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
+                    <div className="absolute bottom-3 left-3 p-2 bg-white/15 backdrop-blur-sm rounded-lg border border-white/20">
+                      <Icon size={20} className="text-white" />
+                    </div>
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-primary transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    {service.description}
-                  </p>
-                  <div className="mt-4 flex items-center gap-1 text-primary text-sm font-medium">
-                    Learn more <ArrowRight size={14} />
+                  <div className="p-5">
+                    <h3 className="text-base font-semibold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {service.description}
+                    </p>
+                    <div className="mt-3 flex items-center gap-1 text-primary text-sm font-medium">
+                      Learn more <ArrowRight size={14} />
+                    </div>
                   </div>
                 </Link>
               );
