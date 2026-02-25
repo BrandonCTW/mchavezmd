@@ -331,12 +331,20 @@ export default function Homepage2() {
                   <p className="text-white text-sm leading-relaxed">28+ years in family medicine, non-operative orthopedics, and minor outpatient surgery.</p>
                 </div>
               </div>
-              <h3 className="text-2xl font-light text-gray-900">
+              <h3
+                className="text-2xl font-light"
+                style={{
+                  background: "linear-gradient(135deg, #6B4C9A 0%, #4A9B7F 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
                 Dr. Milton Chavez
               </h3>
-              <p className="text-primary text-sm font-medium mt-1">
+              <span className="inline-flex items-center gap-1.5 text-xs font-medium text-primary bg-primary/8 px-3 py-1.5 rounded-full mt-2">
                 MD, FAAFP - Medical Director
-              </p>
+              </span>
               <p className="text-gray-500 text-sm mt-3 leading-relaxed">
                 Board-certified family physician with 28+ years of experience
                 specializing in family medicine, non-operative orthopedics, and
@@ -359,12 +367,20 @@ export default function Homepage2() {
                   <p className="text-white text-sm leading-relaxed">Specialized in women&apos;s health, family medicine, inpatient care, and medical weight loss.</p>
                 </div>
               </div>
-              <h3 className="text-2xl font-light text-gray-900">
+              <h3
+                className="text-2xl font-light"
+                style={{
+                  background: "linear-gradient(135deg, #6B4C9A 0%, #4A9B7F 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
+              >
                 Karen Corona
               </h3>
-              <p className="text-primary text-sm font-medium mt-1">
+              <span className="inline-flex items-center gap-1.5 text-xs font-medium text-primary bg-primary/8 px-3 py-1.5 rounded-full mt-2">
                 MSN, APRN, FNP-C - Nurse Practitioner
-              </p>
+              </span>
               <p className="text-gray-500 text-sm mt-3 leading-relaxed">
                 Board-certified family nurse practitioner with diverse experience
                 in women&apos;s health, family medicine, inpatient care, surgical
