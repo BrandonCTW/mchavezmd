@@ -193,6 +193,7 @@ export default function Homepage2() {
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                    <div className="absolute inset-0 bg-primary/25 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="absolute bottom-0 left-0 right-0 p-5">
                       <div className="flex items-center gap-2 mb-2">
                         <Icon size={16} className="text-white/80" />
@@ -200,8 +201,12 @@ export default function Homepage2() {
                           {service.tagline}
                         </span>
                       </div>
-                      <h3 className="text-lg font-medium text-white">
+                      <h3 className="text-lg font-medium text-white flex items-center gap-2">
                         {service.title}
+                        <ArrowRight
+                          size={14}
+                          className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"
+                        />
                       </h3>
                     </div>
                   </div>
