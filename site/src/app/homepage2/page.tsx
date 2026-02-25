@@ -253,8 +253,13 @@ export default function Homepage2() {
                   src="/team/dr-chavez.jpg"
                   alt="Dr. Milton Chavez MD, FAAFP"
                   fill
-                  className="object-cover object-top"
+                  className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 delay-75">
+                  <p className="text-white/70 text-xs font-medium tracking-[0.15em] uppercase mb-2">MD, FAAFP - Medical Director</p>
+                  <p className="text-white text-sm leading-relaxed">28+ years in family medicine, non-operative orthopedics, and minor outpatient surgery.</p>
+                </div>
               </div>
               <h3 className="text-2xl font-light text-gray-900">
                 Dr. Milton Chavez
@@ -276,8 +281,13 @@ export default function Homepage2() {
                   src="/team/karen-corona.jpg"
                   alt="Karen Corona MSN, APRN, FNP-C"
                   fill
-                  className="object-cover object-top"
+                  className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 delay-75">
+                  <p className="text-white/70 text-xs font-medium tracking-[0.15em] uppercase mb-2">MSN, APRN, FNP-C - Nurse Practitioner</p>
+                  <p className="text-white text-sm leading-relaxed">Specialized in women&apos;s health, family medicine, inpatient care, and medical weight loss.</p>
+                </div>
               </div>
               <h3 className="text-2xl font-light text-gray-900">
                 Karen Corona
