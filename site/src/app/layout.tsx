@@ -39,6 +39,49 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  name: "M. Chavez MD, SC",
+  description:
+    "Board-certified family medicine practice in Wicker Park, Chicago specializing in procedural medicine and preventive health.",
+  url: "https://mchavezmd.com",
+  telephone: "+1-773-227-3303",
+  email: "staff@mchavezmd.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "1509 N Western Ave, Unit A",
+    addressLocality: "Chicago",
+    addressRegion: "IL",
+    postalCode: "60622",
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 41.9088,
+    longitude: -87.6876,
+  },
+  openingHoursSpecification: [
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Monday", opens: "08:00", closes: "17:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Tuesday", opens: "08:00", closes: "18:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Wednesday", opens: "08:00", closes: "16:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Thursday", opens: "08:00", closes: "16:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Friday", opens: "08:00", closes: "16:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "08:00", closes: "12:00" },
+  ],
+  medicalSpecialty: "Family Medicine",
+  sameAs: [
+    "https://www.facebook.com/mchavezmdsc",
+    "https://www.linkedin.com/pub/milton-c-chavez-md/7/44b/89b",
+  ],
+  founder: {
+    "@type": "Physician",
+    name: "Dr. Milton Chavez",
+    medicalSpecialty: "Family Medicine",
+    qualifications: "MD, FAAFP",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -46,6 +89,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${inter.variable} antialiased`}>
         <AnnouncementBar />
         <Header />
