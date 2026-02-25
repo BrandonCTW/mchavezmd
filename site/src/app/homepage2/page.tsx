@@ -155,7 +155,10 @@ export default function Homepage2() {
             </div>
             <div className="mt-8 flex flex-wrap items-center gap-2">
               <span className="inline-flex items-center gap-1.5 text-xs font-medium text-secondary bg-secondary/10 px-3 py-1.5 rounded-full">
-                <span className="w-1.5 h-1.5 rounded-full bg-secondary inline-block" />
+                <span className="relative flex w-1.5 h-1.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75" />
+                  <span className="relative inline-flex rounded-full w-1.5 h-1.5 bg-secondary" />
+                </span>
                 Accepting New Patients
               </span>
               <span className="inline-flex items-center gap-1.5 text-xs font-medium text-gray-500 bg-white border border-gray-200 px-3 py-1.5 rounded-full">
