@@ -178,11 +178,35 @@ export default function Home() {
               </p>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primary-dark transition-colors"
+                className="inline-flex items-center gap-2 text-primary font-semibold hover:text-primary-dark transition-colors mb-6"
               >
                 Meet Our Team
                 <ArrowRight size={18} />
               </Link>
+
+              <div className="bg-primary/5 rounded-xl p-6 mt-6">
+                <Quote size={24} className="text-primary/40 mb-2" />
+                <blockquote className="text-gray-700 italic text-sm">
+                  &ldquo;My visit with Dr. Chavez is always pleasant. I love
+                  that the Doctors take your appointment on time, very attentive
+                  and professional and knowledgeable of my medical
+                  history.&rdquo;
+                </blockquote>
+                <p className="mt-2 text-sm font-semibold text-primary">
+                  - Janneth H.
+                </p>
+                <p className="text-xs text-gray-400 mt-1">
+                  via{" "}
+                  <a
+                    href="https://www.tebra.com/care/provider/milton-chavez-md-1700869450"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-primary"
+                  >
+                    Tebra
+                  </a>
+                </p>
+              </div>
             </div>
 
             <div className="space-y-6">
@@ -225,30 +249,6 @@ export default function Home() {
                 </blockquote>
                 <p className="mt-3 text-sm font-semibold text-primary">
                   - Chad M.
-                </p>
-              </div>
-
-              <div className="bg-primary/5 rounded-xl p-6">
-                <Quote size={28} className="text-primary/40 mb-3" />
-                <blockquote className="text-gray-700 italic">
-                  &ldquo;My visit with Dr. Chavez is always pleasant. I love
-                  that the Doctors take your appointment on time, very attentive
-                  and professional and knowledgeable of my medical
-                  history.&rdquo;
-                </blockquote>
-                <p className="mt-3 text-sm font-semibold text-primary">
-                  - Janneth H.
-                </p>
-                <p className="text-xs text-gray-400 mt-1">
-                  via{" "}
-                  <a
-                    href="https://www.tebra.com/care/provider/milton-chavez-md-1700869450"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline hover:text-primary"
-                  >
-                    Tebra
-                  </a>
                 </p>
               </div>
             </div>
