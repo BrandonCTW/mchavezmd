@@ -368,7 +368,8 @@ export default function Homepage2() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl mx-auto">
             {/* Dr. Chavez */}
             <div className="group">
-              <div className="relative h-[28rem] rounded-2xl overflow-hidden mb-6">
+              <div className="relative rounded-2xl mb-6 ring-1 ring-primary/15 group-hover:ring-2 group-hover:ring-primary/35 group-hover:shadow-lg group-hover:shadow-primary/10 transition-all duration-300">
+                <div className="relative h-[28rem] rounded-[14px] overflow-hidden">
                 <Image
                   src="/team/dr-chavez.jpg"
                   alt="Dr. Milton Chavez MD, FAAFP"
@@ -379,6 +380,7 @@ export default function Homepage2() {
                 <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 delay-75">
                   <p className="text-white/70 text-xs font-medium tracking-[0.15em] uppercase mb-2">MD, FAAFP - Medical Director</p>
                   <p className="text-white text-sm leading-relaxed">28+ years in family medicine, non-operative orthopedics, and minor outpatient surgery.</p>
+                </div>
                 </div>
               </div>
               <h3
@@ -404,7 +406,8 @@ export default function Homepage2() {
 
             {/* Karen Corona */}
             <div className="group">
-              <div className="relative h-[28rem] rounded-2xl overflow-hidden mb-6">
+              <div className="relative rounded-2xl mb-6 ring-1 ring-secondary/15 group-hover:ring-2 group-hover:ring-secondary/35 group-hover:shadow-lg group-hover:shadow-secondary/10 transition-all duration-300">
+                <div className="relative h-[28rem] rounded-[14px] overflow-hidden">
                 <Image
                   src="/team/karen-corona.jpg"
                   alt="Karen Corona MSN, APRN, FNP-C"
@@ -415,6 +418,7 @@ export default function Homepage2() {
                 <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-500 delay-75">
                   <p className="text-white/70 text-xs font-medium tracking-[0.15em] uppercase mb-2">MSN, APRN, FNP-C - Nurse Practitioner</p>
                   <p className="text-white text-sm leading-relaxed">Specialized in women&apos;s health, family medicine, inpatient care, and medical weight loss.</p>
+                </div>
                 </div>
               </div>
               <h3
