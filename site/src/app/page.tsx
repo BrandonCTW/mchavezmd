@@ -269,12 +269,24 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About / CTA */}
+      {/* Meet Our Team */}
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="relative h-[28rem] rounded-xl overflow-hidden">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Meet Our Team
+            </h2>
+            <div className="mt-4 h-1 w-20 bg-primary rounded-full mx-auto" />
+            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+              Board-certified physicians and practitioners dedicated to your
+              health and well-being.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Dr. Chavez */}
+            <div className="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div className="relative h-72">
                 <Image
                   src="/team/dr-chavez.jpg"
                   alt="Dr. Milton Chavez MD, FAAFP"
@@ -282,9 +294,90 @@ export default function Home() {
                   className="object-cover object-top"
                 />
               </div>
-              <div className="absolute bottom-4 right-4 bg-primary text-white rounded-xl p-5 shadow-lg max-w-[180px]">
-                <p className="text-3xl font-bold">28+</p>
-                <p className="text-sm text-white/80">
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900">
+                  Dr. Milton Chavez
+                </h3>
+                <p className="text-primary font-semibold text-sm mt-1">
+                  MD, FAAFP - Medical Director
+                </p>
+                <p className="text-gray-600 text-sm mt-3 leading-relaxed">
+                  Board-certified family physician with 28+ years of experience
+                  specializing in family medicine, non-operative orthopedics, and
+                  minor outpatient surgery.
+                </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {["Family Medicine", "Orthopedics", "Minor Surgery"].map(
+                    (tag) => (
+                      <span
+                        key={tag}
+                        className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-medium"
+                      >
+                        {tag}
+                      </span>
+                    )
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* Karen Corona */}
+            <div className="bg-gray-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <div className="relative h-72">
+                <Image
+                  src="/team/karen-corona.jpg"
+                  alt="Karen Corona MSN, APRN, FNP-C"
+                  fill
+                  className="object-cover object-top"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-900">
+                  Karen Corona
+                </h3>
+                <p className="text-primary font-semibold text-sm mt-1">
+                  MSN, APRN, FNP-C - Family Nurse Practitioner
+                </p>
+                <p className="text-gray-600 text-sm mt-3 leading-relaxed">
+                  Board-certified family nurse practitioner with diverse
+                  experience in women&apos;s health, family medicine, inpatient
+                  care, surgical settings, and medical weight loss.
+                </p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {["Women's Health", "Weight Loss", "Family Medicine"].map(
+                    (tag) => (
+                      <span
+                        key={tag}
+                        className="text-xs bg-primary/10 text-primary px-3 py-1 rounded-full font-medium"
+                      >
+                        {tag}
+                      </span>
+                    )
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About / CTA */}
+      <section className="py-12 md:py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <div className="relative h-[28rem] rounded-xl overflow-hidden">
+                <Image
+                  src="/images/hero-stethoscope.jpg"
+                  alt="M. Chavez MD, SC practice"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/60 to-transparent" />
+              </div>
+              <div className="absolute bottom-4 right-4 bg-white rounded-xl p-5 shadow-lg max-w-[180px]">
+                <p className="text-3xl font-bold text-primary">28+</p>
+                <p className="text-sm text-gray-600">
                   Years in Family Medicine
                 </p>
               </div>
