@@ -637,6 +637,19 @@ export default function Homepage2() {
 
       {/* CTA - Minimal */}
       <section className="py-20 md:py-28 bg-gradient-to-br from-primary-dark via-primary to-secondary relative overflow-hidden">
+        {/* Dot grid - mirrors hero, anchored to right side */}
+        <div
+          className="absolute inset-0 pointer-events-none select-none"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle, rgba(255, 255, 255, 0.13) 1px, transparent 1px)",
+            backgroundSize: "28px 28px",
+            maskImage:
+              "radial-gradient(ellipse 55% 70% at 82% 50%, black 0%, transparent 100%)",
+            WebkitMaskImage:
+              "radial-gradient(ellipse 55% 70% at 82% 50%, black 0%, transparent 100%)",
+          }}
+        />
         <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-white/5 pointer-events-none" />
         <div className="absolute -bottom-16 -left-16 w-72 h-72 rounded-full bg-white/5 pointer-events-none" />
         <div className="max-w-3xl mx-auto px-6 text-center relative">
