@@ -299,15 +299,41 @@ export default function Homepage2() {
         <div className="absolute -left-24 top-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-primary/8 blur-3xl pointer-events-none" />
         <div className="absolute -right-24 top-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-secondary/8 blur-3xl pointer-events-none" />
         <div className="max-w-5xl mx-auto px-6 text-center relative">
-          <Quote size={40} className="text-primary/20 mx-auto mb-8" />
+          <div
+            className="inline-flex items-center justify-center w-16 h-16 rounded-full mx-auto mb-8"
+            style={{
+              background:
+                "linear-gradient(135deg, rgba(107,76,154,0.12) 0%, rgba(74,155,127,0.12) 100%)",
+              border: "1px solid rgba(107,76,154,0.18)",
+              boxShadow: "0 0 32px rgba(107,76,154,0.12)",
+            }}
+          >
+            <Quote size={28} style={{ color: "#6B4C9A" }} />
+          </div>
           <blockquote className="text-2xl md:text-3xl lg:text-4xl font-light text-gray-800 leading-relaxed italic">
             &ldquo;We strive to inspire and aid those seeking their optimal
             health, wellness and healing through efficient service, quality
             consultations and our core values: integrity and respect.&rdquo;
           </blockquote>
-          <div className="mt-8 h-px w-16 bg-primary mx-auto" />
+          <div
+            className="mt-8 h-px w-24 mx-auto"
+            style={{
+              background: "linear-gradient(90deg, #6B4C9A 0%, #4A9B7F 100%)",
+            }}
+          />
           <p className="mt-6 text-sm tracking-[0.15em] uppercase text-gray-400">
             Our Mission
+          </p>
+          <p
+            className="mt-2 text-sm font-medium"
+            style={{
+              background: "linear-gradient(135deg, #6B4C9A 0%, #4A9B7F 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
+          >
+            Dr. Milton Chavez MD, FAAFP
           </p>
         </div>
       </section>
