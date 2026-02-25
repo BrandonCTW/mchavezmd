@@ -486,14 +486,21 @@ export default function Homepage2() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Hours */}
-            <div>
+            <div
+              className="rounded-2xl p-8 border border-gray-100 relative overflow-hidden"
+              style={{ background: "linear-gradient(145deg, #faf9f7 0%, #f3f0f9 100%)" }}
+            >
+              {/* Subtle top gradient accent */}
+              <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary via-secondary to-transparent pointer-events-none" />
               <div className="flex items-center gap-3 mb-6">
-                <Clock size={20} className="text-primary" />
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Clock size={18} className="text-primary" />
+                </div>
                 <h3 className="text-xl font-light text-gray-900">
                   Office Hours
                 </h3>
               </div>
-              <div className="space-y-3">
+              <div className="space-y-2.5">
                 {[
                   ["Monday", "8:00a - 5:00p"],
                   ["Tuesday", "8:00a - 6:00p"],
@@ -504,12 +511,18 @@ export default function Homepage2() {
                 ].map(([day, hours]) => (
                   <div
                     key={day}
-                    className="flex justify-between text-sm pb-3 border-b border-gray-100 last:border-0"
+                    className="flex justify-between text-sm pb-2.5 border-b border-gray-200/60 last:border-0"
                   >
-                    <span className="text-gray-600">{day}</span>
+                    <span className="text-gray-500">{day}</span>
                     <span className="text-gray-900 font-medium">{hours}</span>
                   </div>
                 ))}
+              </div>
+              <div className="mt-6 pt-5 border-t border-gray-200/60 flex items-center gap-2.5">
+                <MapPin size={14} className="text-secondary flex-shrink-0" />
+                <span className="text-xs text-gray-400 leading-snug">
+                  Free parking at Western &amp; LeMoyne
+                </span>
               </div>
             </div>
 
