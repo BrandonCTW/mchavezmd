@@ -437,32 +437,66 @@ export default function Home() {
 
       {/* Location */}
       <section className="py-12 md:py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Serving Wicker Park & Surrounding Areas
-          </h2>
-          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            Conveniently located at the corner of Western Ave and LeMoyne Ave in
-            Wicker Park, with free parking available.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
-            {[
-              "Wicker Park",
-              "Lincoln Park",
-              "Bucktown",
-              "Logan Square",
-              "Ukrainian Village",
-            ].map((area) => (
-              <div
-                key={area}
-                className="flex items-center gap-2 bg-white rounded-lg py-3 px-5 shadow-sm whitespace-nowrap"
-              >
-                <MapPin size={14} className="text-primary flex-shrink-0" />
-                <span className="text-sm font-medium text-gray-700">
-                  {area}
-                </span>
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            {/* Map */}
+            <div className="rounded-xl overflow-hidden shadow-md border border-gray-200 h-80 lg:h-96">
+              <iframe
+                src="https://maps.google.com/maps?q=1509+N+Western+Ave+Unit+A+Chicago+IL+60622&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="M. Chavez MD, SC - 1509 N Western Ave, Chicago, IL"
+              />
+            </div>
+
+            {/* Location details */}
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Serving Wicker Park & Surrounding Areas
+              </h2>
+              <p className="text-gray-600 mb-6">
+                Conveniently located at the corner of Western Ave and LeMoyne
+                Ave in Wicker Park, with free parking available.
+              </p>
+              <div className="space-y-3 mb-6">
+                <div className="flex items-start gap-3">
+                  <MapPin size={18} className="text-primary mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="font-semibold text-gray-900">1509 N Western Ave, Unit A</p>
+                    <p className="text-gray-600 text-sm">Chicago, IL 60622</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Phone size={18} className="text-primary flex-shrink-0" />
+                  <a href="tel:7732273303" className="text-gray-700 hover:text-primary font-medium">
+                    (773) 227-3303
+                  </a>
+                </div>
               </div>
-            ))}
+              <div className="flex flex-wrap gap-2">
+                {[
+                  "Wicker Park",
+                  "Lincoln Park",
+                  "Bucktown",
+                  "Logan Square",
+                  "Ukrainian Village",
+                ].map((area) => (
+                  <div
+                    key={area}
+                    className="flex items-center gap-1.5 bg-white rounded-lg py-2 px-4 shadow-sm border border-gray-100 whitespace-nowrap"
+                  >
+                    <MapPin size={12} className="text-primary flex-shrink-0" />
+                    <span className="text-sm font-medium text-gray-700">
+                      {area}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
