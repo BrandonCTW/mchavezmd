@@ -317,55 +317,73 @@ export default function Homepage2() {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    size={16}
-                    className="fill-accent text-accent"
-                  />
-                ))}
+            <div className="bg-white rounded-2xl p-8 shadow-sm relative overflow-hidden">
+              <div
+                className="absolute -top-4 left-4 text-[8rem] leading-none text-primary/10 select-none pointer-events-none"
+                style={{ fontFamily: "Georgia, serif" }}
+                aria-hidden="true"
+              >
+                &ldquo;
               </div>
-              <blockquote className="text-gray-600 leading-relaxed italic">
-                &ldquo;My visit with Dr. Chavez is always pleasant. I love that
-                the Doctors take your appointment on time, very attentive and
-                professional and knowledgeable of my medical history.&rdquo;
-              </blockquote>
-              <div className="mt-6 pt-4 border-t border-gray-100">
-                <p className="font-medium text-gray-900 text-sm">Janneth H.</p>
-                <p className="text-xs text-gray-400 mt-0.5">
-                  via{" "}
-                  <a
-                    href="https://www.tebra.com/care/provider/milton-chavez-md-1700869450"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline hover:text-primary"
-                  >
-                    Tebra
-                  </a>
-                </p>
+              <div className="relative">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star
+                      key={i}
+                      size={16}
+                      className="fill-accent text-accent"
+                    />
+                  ))}
+                </div>
+                <blockquote className="text-gray-600 leading-relaxed italic">
+                  &ldquo;My visit with Dr. Chavez is always pleasant. I love that
+                  the Doctors take your appointment on time, very attentive and
+                  professional and knowledgeable of my medical history.&rdquo;
+                </blockquote>
+                <div className="mt-6 pt-4 border-t border-gray-100">
+                  <p className="font-medium text-gray-900 text-sm">Janneth H.</p>
+                  <p className="text-xs text-gray-400 mt-0.5">
+                    via{" "}
+                    <a
+                      href="https://www.tebra.com/care/provider/milton-chavez-md-1700869450"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline hover:text-primary"
+                    >
+                      Tebra
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    size={16}
-                    className="fill-accent text-accent"
-                  />
-                ))}
+            <div className="bg-white rounded-2xl p-8 shadow-sm relative overflow-hidden">
+              <div
+                className="absolute -top-4 left-4 text-[8rem] leading-none text-primary/10 select-none pointer-events-none"
+                style={{ fontFamily: "Georgia, serif" }}
+                aria-hidden="true"
+              >
+                &ldquo;
               </div>
-              <blockquote className="text-gray-600 leading-relaxed italic">
-                &ldquo;Dr. Chavez has my highest recommendation. He is
-                knowledgeable, intelligent, empathic, consistent, thorough and
-                soft-spoken. Basically, he delivers what most people want and
-                deserve from their MD.&rdquo;
-              </blockquote>
-              <div className="mt-6 pt-4 border-t border-gray-100">
-                <p className="font-medium text-gray-900 text-sm">Chad M.</p>
-                <p className="text-xs text-gray-400 mt-0.5">Verified Patient</p>
+              <div className="relative">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star
+                      key={i}
+                      size={16}
+                      className="fill-accent text-accent"
+                    />
+                  ))}
+                </div>
+                <blockquote className="text-gray-600 leading-relaxed italic">
+                  &ldquo;Dr. Chavez has my highest recommendation. He is
+                  knowledgeable, intelligent, empathic, consistent, thorough and
+                  soft-spoken. Basically, he delivers what most people want and
+                  deserve from their MD.&rdquo;
+                </blockquote>
+                <div className="mt-6 pt-4 border-t border-gray-100">
+                  <p className="font-medium text-gray-900 text-sm">Chad M.</p>
+                  <p className="text-xs text-gray-400 mt-0.5">Verified Patient</p>
+                </div>
               </div>
             </div>
           </div>
